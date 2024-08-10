@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    padding-left: 25%;
+    padding-right: 20%;
+    background-color: #01493A;
+    height: 66vh;
+}
+
+
+.all {
+    margin-left: 100px;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 400;
+}
+
+.text,
+.paragraph {
+
+    display: flex;
+    color: #fff;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    line-height: 41px;
+    margin-left: 5px;
+}
+
+#logo {
+    width: 350px;
+}
+
+.logo {
+    height: 253px;
+}
+
+.photo {
+    position: absolute;
+    top: 165px;
+    right: 279px;
+    display: block;
+    transform: translateY(-117px);
+}
+
+.girl_environmental {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.girl {
+    width: 62%;
+    margin-top: 25px;
+}
+
+.box_logos {
+    position: absolute;
+    bottom: -53px;
+    left: 36%;
+    top: 670px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    width: 94%;
+    height: 155px;
+    padding: 20px;
+    background-color: #E1DFDF;
+    border-radius: 91px 104px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 16px 27px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+
+.paragraph {
+    color: #29E08A;
+    font-size: 50px;
+    height: 102px;
+}
+
+.border {
+    border-bottom: 6px solid #00844F;
+    justify-content: space-evenly;
+}
+
+i {
+    font-weight: 500;
+    font-size: 18px;
+    color: #01493A;
+}
+
+.arrow_right {
+    width: 19px;
+    margin-left: 10px;
+}
+
+
+.text_about {
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+/* Second page */
+.container_second {
+    padding-left: 25%;
+    padding-right: 20%;
+    background-color: #002e23;
+    height: 66vh;
+}
+
+.about_us {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.text_about_us {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 56vh;
+}
+
+.hashtag {
+    padding-block: 41px;
+    color: #66827B;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.border {
+    border-bottom: 3px solid #00BF63;
+    justify-content: space-evenly;
+    height: 20px;
+    width: 90px;
+    stroke-width: 3px;
+}
+
+h2 {
+    color: #00BF63;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.paragraph_about_us {
+    font-size: 26px;
+    color: #fff;
+    margin-top: 32px;
+}
+
+
+
+#logo_about_us {
+    width: 308px !important;
+}
+
+.world {
+    position: absolute;
+    top: 1043px;
+    right: 590px;
+    width: 42vh;
+    filter: drop-shadow(0 0 5rem rgb(0, 0, 0));
+}
+
+/* Second page */
+.container_third,
+.container_fourth,
+.container_fifth {
+    background-image: url("../img/matto.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 25%;
+    padding-right: 20%;
+    background-color: #002e23;
+    height: 66vh;
+}
+
+
+.box {
+    width: 80%;
+    /* Ajuste a largura conforme necessário */
+    max-width: 1200px;
+    /* Largura máxima do contêiner */
+    margin: 0 auto;
+    /* Centraliza o contêiner na página */
+    padding: 79px;
+    /* Espaçamento interno *
+    border-radius: 20px 57px;
+    /* Borda da caixa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para dar profundidade */
+    border-radius: 75px 62px;
+    /* Canto arredondado */
+    background-color: #01493A;
+    /* Cor de fundo */
+
+}
+
+.title_lincenses {
+    color: #2ded90;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 22px;
+}
+
+.text_text_lincenses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.LP,
+.LI,
+.LO {
+    margin-bottom: 17px;
+}
+
+p {
+    font-size: 22px;
+    color: #fff;
+}
+
+.type_lincenses {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+.Licenses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
