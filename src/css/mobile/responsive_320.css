@@ -1,0 +1,663 @@
+@media (420px <=width <=956px) {
+
+    .container {
+        /* width: 340% !important; */
+    }
+
+    .box_logos {
+        width: 100%;
+        border-radius: inherit;
+        ;
+        align-items: center;
+        display: none;
+    }
+
+    .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        background-color: #f1f1f1;
+        height: 120px;
+        display: flex;
+        align-items: center;
+    }
+
+    .all {
+        margin-top: 100px;
+    }
+
+    .all-info {
+        margin: 0;
+    }
+
+    .marquee-content {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 30s linear infinite;
+    }
+
+    .marquee-content img {
+        margin-right: 50px;
+        /* Espaçamento entre as imagens */
+        vertical-align: middle;
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .box,
+    .box_list {
+        border-radius: 30px !important;
+    }
+
+    ul {
+        font-size: 11px !important;
+    }
+
+    .title_list {
+        font-size: 15px;
+    }
+
+    .value_stripe {
+        width: 33.333333333%;
+    }
+
+    .flecha {
+        width: 50px;
+    }
+
+    .eyes {
+        height: 50px;
+        width: 50px;
+    }
+
+    .hands_value {
+        height: 50px;
+        width: 50px;
+    }
+
+    .who-we-are {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .all_mission {
+        display: flex;
+        justify-content: space-around;
+        width: unset;
+        height: unset;
+    }
+
+    .control {
+        padding: 0;
+    }
+
+    .about_of_mission {
+        padding: 50px;
+    }
+
+    .about_of_value {
+        padding: 10px !important;
+    }
+
+    .text_land {
+        width: auto;
+    }
+
+    h5 {
+        font-size: 25px !important;
+    }
+
+    .title_mission_fixed {
+        font-size: 30px !important;
+    }
+
+    .text_about_us_ {
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 50px !important;
+    }
+
+    .paragraph_about_us {
+        text-align: center;
+    }
+
+    #logo_about_us {
+        width: 200px;
+    }
+
+    .icon-entrance {
+        width: 60px;
+        height: 65px;
+    }
+
+    .text_about_us {
+        display: none;
+    }
+
+    .text_stared {
+        font-size: 1.5em;
+    }
+
+    .entrance {
+        width: 100%;
+        height: 100vh;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 41px !important;
+    }
+
+    .girl_environmental {
+        margin-left: 27px;
+    }
+
+    .about_us {
+        width: 100%;
+    }
+
+    .Licenses {
+        width: 87% !important;
+    }
+
+    .license-image {
+        width: 100%;
+        /* Deixe que a imagem se ajuste à largura disponível */
+        height: auto;
+        /* Mantém a proporção original da imagem */
+        max-width: 46%;
+        /* Garante que não ultrapasse uma certa largura */
+    }
+
+
+    .signature {
+        background-color: #002e23 !important;
+        width: 100%;
+    }
+
+    .footer_all {
+        background-color: #002E24 !important;
+        width: 100%;
+    }
+
+    .all_vision {
+        align-items: center;
+    }
+
+    .text_end {
+        width: unset;
+    }
+
+    .title_end {
+        align-items: center;
+    }
+
+    .info_end {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .address {
+        padding: 0;
+        height: 120px;
+    }
+
+    .thanks div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .thank-you {
+        font-size: 35px !important;
+        margin-bottom: 10px;
+    }
+
+    .title_end {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .border_green {
+        color: #048F72;
+    }
+
+    a {
+        margin: 0
+    }
+
+    .text_address {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .signature {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .content {
+        padding: 24px !important;
+    }
+
+    .instragram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .image-section,
+    .image-section-hands,
+    .image-section-value {
+        display: none;
+    }
+
+    .img_end {
+        display: none;
+    }
+
+    .license-image,
+    .stripe1,
+    .stripe2,
+    .stripe3,
+    .green-section,
+    .girl_environmental,
+    .logo_horizontally,
+    .logoMission,
+    .logoEnd,
+    .container_element_green,
+    .logo_footer {
+        display: none;
+    }
+
+    * {
+        font-size: unset !important;
+    }
+
+    .about_of_mission,
+    .about_of_value {
+        width: auto !important;
+    }
+}
+
+@media (320px <=width <=956px) {
+
+    .container {
+        /* width: 340% !important; */
+    }
+
+    .LP,
+    .LI,
+    .LO,
+    .PA,
+    .LA {
+        margin-block-start: 23px;
+        margin-block-end: 25px;
+        font-size: 11px !important;
+    }
+
+    .title_list {
+        font-size: 10px !important;
+    }
+
+    .box_logos {
+        width: 100%;
+        border-radius: inherit;
+        ;
+        align-items: center;
+        display: none;
+    }
+
+    .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        background-color: #f1f1f1;
+        height: 120px;
+        display: flex;
+        align-items: center;
+    }
+
+    .all {
+        margin-top: 100px;
+    }
+
+    .all-info {
+        margin: 0;
+    }
+
+    .img_mission,
+    .img_values {
+        padding: 15px;
+        border-radius: 20px;
+        border: 3px solid #002E24;
+
+    }
+
+    .img_values {
+        border: 3px solid #fff;
+    }
+
+    .about_mission {
+        width: 35px;
+    }
+
+    .marquee-content {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 30s linear infinite;
+    }
+
+    .marquee-content img {
+        margin-right: 20px;
+        /* Espaçamento entre as imagens */
+        vertical-align: middle;
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .box,
+    .box_list {
+        border-radius: 30px !important;
+    }
+
+    .value_stripe {
+        width: 33.333333333%;
+    }
+
+    .flecha {
+        width: 50px;
+    }
+
+    .eyes,
+    .hands {
+        height: 50px;
+        width: 50px;
+    }
+
+    .hands_value {
+        height: 50px;
+        width: 50px;
+    }
+
+    .who-we-are {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .all_mission {
+        display: flex;
+        justify-content: space-around;
+        width: unset;
+        height: unset;
+    }
+
+    .control {
+        padding: 0;
+    }
+
+    .about_of_mission {
+        padding: 50px;
+    }
+
+    .about_of_value {
+        padding: 10px !important;
+    }
+
+    .text_land {
+        width: auto;
+    }
+
+    .text_land p {
+        font-size: 11px !important;
+    }
+
+    h5 {
+        font-size: 20px !important;
+    }
+
+    .title_mission_fixed {
+        margin-top: 0;
+        font-size: 30px !important;
+    }
+
+    .img_eyes_vission {
+        border-radius: 20px;
+    }
+
+    .about_vission {
+        width: 35px !important;
+        height: unset;
+    }
+
+    .text_about_us_ {
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 40px !important;
+    }
+
+    .paragraph_about_us {
+        text-align: center;
+    }
+
+    #logo_about_us {
+        width: 200px;
+    }
+
+    .icon-entrance {
+        width: 60px;
+        height: 65px;
+    }
+
+    .text_about_us {
+        display: none;
+    }
+
+    .text_stared {
+        font-size: 1.5em;
+    }
+
+    .entrance {
+        width: 100%;
+        height: 100vh;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 41px !important;
+    }
+
+    .girl_environmental {
+        margin-left: 27px;
+    }
+
+    .about_us {
+        width: 100%;
+    }
+
+    .Licenses {
+        width: 87% !important;
+    }
+
+    .license-image {
+        width: 100%;
+        /* Deixe que a imagem se ajuste à largura disponível */
+        height: auto;
+        /* Mantém a proporção original da imagem */
+        max-width: 46%;
+        /* Garante que não ultrapasse uma certa largura */
+    }
+
+
+    .signature {
+        background-color: #002e23 !important;
+        width: 100%;
+    }
+
+    .footer_all {
+        background-color: #002E24 !important;
+        width: 100%;
+    }
+
+    .all_vision {
+        align-items: center;
+    }
+
+    .text_end {
+        width: unset;
+    }
+
+    .model_box_end {
+        height: 70vh;
+    }
+
+    #logo {
+        width: 320px;
+    }
+
+
+
+    .title_end {
+        align-items: center;
+    }
+
+    .info_end {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .address {
+        padding: 0;
+        height: 120px;
+    }
+
+    .thanks div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .thank-you {
+        font-size: 35px !important;
+        margin-bottom: 10px;
+    }
+
+    .title_end {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .border_green {
+        color: #048F72;
+    }
+
+    a {
+        margin: 0
+    }
+
+    .text_address {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .signature {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .content {
+        padding: 24px !important;
+    }
+
+    .instragram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .image-section,
+    .image-section-hands,
+    .image-section-value {
+        display: none;
+    }
+
+    .img_end {
+        display: none;
+    }
+
+    .license-image,
+    .stripe1,
+    .stripe2,
+    .stripe3,
+    .green-section,
+    .girl_environmental,
+    .logo_horizontally,
+    .logoMission,
+    .logoEnd,
+    .container_element_green,
+    .logo_footer {
+        display: none;
+    }
+
+    * {
+        font-size: unset !important;
+    }
+
+    .about_of_mission,
+    .about_of_value {
+        width: auto !important;
+        font-size: 11px !important;
+    }
+
+    .ul-licenca {
+        font-size: 8px !important;
+    }
+
+    .ul-sub li {
+        font-size: 8px !important;
+    }
+}
