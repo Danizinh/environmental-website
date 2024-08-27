@@ -4,10 +4,14 @@
 ## Descrição
 
 O projeto **Environmental Website** é um trabalho freelancer desenvolvido para criar um site simples e informativo sobre questões ambientais. O site foi construído utilizando tecnologias puras, como HTML e CSS, com foco na simplicidade, acessibilidade e eficiência. Este projeto visa educar e conscientizar os visitantes sobre a importância da preservação do meio ambiente.
+## Video da versao mobile(cel)
+https://github.com/user-attachments/assets/2a621aaf-c964-4f01-a185-4534af9a9fca
 
 ## Estrutura do Projeto
 
 A estrutura do projeto é organizada da seguinte forma:
+
+
 
 ```
 environmental-website/
