@@ -9,21 +9,9 @@
     background-color: #01493A;
 }
 
-.all {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    height: 65vh;
-    align-items: center;
-    width: 100%;
-}
-
-.marquee-container {
-    display: none;
-}
-
 .icon-entrance {
-    width: 115px;
+    width: 60px;
+    height: 65px;
 }
 
 .entrance {
@@ -33,13 +21,23 @@
     justify-content: center;
 }
 
+.all {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 65vh;
+    align-items: center;
+    width: 100%;
+}
+
 #logo {
-    width: 350px;
+    width: 422px;
 }
 
 .logo {
     height: 253px;
 }
+
 
 .text_stared,
 .paragraph {
@@ -75,10 +73,16 @@ i {
     color: #01493A;
 }
 
-.text_about_us_ {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.arrow_right {
+    width: 19px;
+    margin-left: 10px;
+}
+
+.border {
+    border-bottom: 3px solid #00BF63;
+    justify-content: space-evenly;
+    height: 43px;
+    width: 122px;
 }
 
 .girl_environmental {
@@ -95,47 +99,152 @@ i {
     z-index: 1;
 }
 
-.box_logos {
+.marquee-container_logos {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    height: 120px;
     display: flex;
-    justify-content: space-around;
-    width: 56%;
-    height: 155px;
-    padding: 20px;
-    background-color: #E1DFDF;
-    border-radius: 91px 104px 0 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
-/* frist  Page */
-.paragraph {
-    color: #29E08A;
-    font-size: 50px;
-    height: 102px;
+.marquee-content_logos {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
 }
 
-.arrow_right {
-    width: 19px;
-    margin-left: 10px;
+.marquee-container {
+    display: none;
 }
 
-.border {
-    border-bottom: 3px solid #00BF63;
-    justify-content: space-evenly;
-    height: 43px;
-    width: 122px;
-
+.marquee-container_t {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    height: 120px;
+    display: flex;
+    align-items: center;
 }
 
-.border_about {
-    border-bottom: 3px solid #00BF63;
-    justify-content: space-evenly;
-    padding-bottom: 14px;
-    width: 122px;
-
+.marquee-content_text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
 }
 
-.text_about {
-    justify-content: space-between;
+.marquee-content_text img {
+    margin-right: 50px;
+    /* Espaçamento entre as imagens */
+    vertical-align: middle;
+}
+
+.marquee-content_text img {
+    margin-right: 50px;
+    /* Espaçamento entre as imagens */
+    vertical-align: middle;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.show-popup {
+    position: fixed;
+    bottom: 200px;
+    right: 200px;
+    padding: 18px 40px;
+    background: #00BF62;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #f2f2f2;
+    font-weight: 500;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.show-popup:hover {
+    background: #00BF62
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup-container.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: .4s ease;
+    z-index: 999;
+    background-color: rgba(0 0, 0, 0.8);
+}
+
+.popup-container .popup-box {
+    width: 38%;
+    background: #f2f2f2;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 30px;
+    transform: scale(0);
+}
+
+.video_text {
+    display: flex;
+    justify-content: center;
+}
+
+.popup-container.active .popup-box {
+    transform: scale(1);
+    transition: .4s ease;
+    transition-delay: .25s;
+}
+
+.popup-box h1 {
+    color: #333;
+    line-height: 1;
+}
+
+.popup-box p {
+    color: #333;
+    margin: 12px 38px 20px;
+}
+
+.popup-box .close-btn {
+    width: 100%;
+    background: #00BF62;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #f2f2f2;
+    font-weight: 500;
+    margin: 16px 10px;
 }
 
 .second {
@@ -174,12 +283,11 @@ h2 {
     font-size: 50px;
 }
 
-
-.paragraph_about_us {
-    font-size: 30px;
-    color: #fff;
-    margin-top: 26px;
-    width: 75%;
+.border_about {
+    border-bottom: 3px solid #00BF63;
+    justify-content: space-evenly;
+    padding-bottom: 14px;
+    width: 122px;
 }
 
 #logo_about_us {
@@ -187,22 +295,12 @@ h2 {
     justify-content: flex-start;
     width: 26%;
     margin-top: 30px;
-
 }
 
 .world {
     height: 100%;
 }
 
-.logoMission {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-/* second page */
-
-/* third_page */
 .modal_box {
     background-image: url("../img/matto.webp");
     background-position: center;
@@ -215,6 +313,87 @@ h2 {
     align-items: center;
 }
 
+.Licenses {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box {
+    border-radius: 64px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #01493A;
+    position: relative;
+    overflow: visible;
+    width: 80%;
+}
+
+.we-serve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.we-serve-regions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.text_about_us_ {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+/* frist  Page */
+.paragraph {
+    color: #29E08A;
+    font-size: 50px;
+    height: 65px;
+}
+
+
+
+
+
+
+.text_about {
+    justify-content: space-between;
+}
+
+
+
+
+.paragraph_about_us {
+    font-size: 23px;
+    color: #fff;
+    margin-top: 26px;
+    /* width: 75%; */
+}
+
+.contact {
+    font-size: 2rem;
+}
+
+
+
+.logoMission {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* second page */
+
+/* third_page */
 .model_box_different {
     background-color: #00BF63;
     height: 60vh;
@@ -269,7 +448,7 @@ h2 {
     background-color: #01493A;
     background-position-x: left;
     justify-content: center;
-    height: 60vh;
+    height: 80vh;
 }
 
 .title_end {
@@ -338,6 +517,7 @@ a {
 
 .text_address {
     font-size: 26px;
+    font-weight: 500;
 }
 
 .Whatsapp {
@@ -355,7 +535,7 @@ a {
     flex-direction: column;
     width: 100%;
     background-color: white;
-    height: 33vh;
+    height: 24vh;
 }
 
 .thank-you {
@@ -402,22 +582,7 @@ a {
     align-items: center;
 }
 
-.Licenses {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
 
-.box {
-    border-radius: 64px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #01493A;
-    position: relative;
-    overflow: visible;
-    width: 80%;
-}
 
 .text_lincenses {
     width: 100%;
@@ -444,7 +609,6 @@ a {
 .text_second,
 .text_third {
     color: #fff;
-    font-size: 23px;
 }
 
 .content {
@@ -473,10 +637,9 @@ a {
 
 .proposal {
 
-    background-image: url("../img/proposta.jpg");
+    background-image: url("../img/Proposta.jpg");
     background-position-x: -60px !important;
 }
-
 
 .ambiental {
     background-image: url("../img/ambiental.jpg");
@@ -617,7 +780,7 @@ a {
 }
 
 ul {
-    font-size: 25px;
+    /* font-size: 25px; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -894,10 +1057,10 @@ h4 {
     padding-left: 157px;
     margin: 0 auto;
     line-height: 1.4;
-    text-align: justify;
+    /* text-align: justify; */
     width: 668px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .about_of_value {
@@ -906,10 +1069,10 @@ h4 {
     padding-left: 157px;
     margin: 0 auto;
     line-height: 1.4;
-    text-align: justify;
+    /* text-align: justify; */
     width: 668px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .control {
@@ -1050,7 +1213,7 @@ h4 {
 }
 
 .logo_m {
-    width: 228px;
+    width: 137px;
 }
 
 .logo_end {
@@ -1097,4 +1260,23 @@ h5 {
 
 .signature {
     background-color: #002e23;
+}
+
+.we-serve-regions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.city {
+    height: 8vh;
+}
+
+.location {
+    text-align: center;
+}
+
+html {
+    overflow-x: hidden;
 }

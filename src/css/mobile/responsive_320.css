@@ -12,7 +12,7 @@
         display: none;
     }
 
-    .marquee-container {
+    .marquee-container_mobile {
         width: 100%;
         overflow: hidden;
         white-space: nowrap;
@@ -23,6 +23,11 @@
         align-items: center;
     }
 
+    .marquee-content_logos,
+    .marquee-container_logos {
+        display: none;
+    }
+
     .all {
         margin-top: 100px;
     }
@@ -31,7 +36,7 @@
         margin: 0;
     }
 
-    .marquee-content {
+    .marquee-content_mobile {
         display: inline-block;
         padding-left: 100%;
         animation: marquee 30s linear infinite;
@@ -51,6 +56,35 @@
         to {
             transform: translateX(-100%);
         }
+    }
+
+    .marquee-content_text {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 30s linear infinite;
+    }
+
+    .marquee-content_text img {
+        margin-right: 50px;
+        /* Espaçamento entre as imagens */
+        vertical-align: middle;
+    }
+
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .we-serve {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .box,
@@ -89,6 +123,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        font-weight: 700;
     }
 
     .all_mission {
@@ -300,6 +335,33 @@
     .about_of_value {
         width: auto !important;
     }
+
+    .childrens_paragraph {
+        font-size: 36px !important;
+        padding-right: 203px;
+    }
+
+    .we-serve-regions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .location {
+        text-align: center;
+    }
+
+    .show-popup {
+        width: 174px;
+        padding: 3px;
+    }
+
+    .popup-container .popup-box {
+        width: 104%;
+    }
+
 }
 
 @media (320px <=width <=956px) {
@@ -386,6 +448,12 @@
             transform: translateX(-100%);
         }
     }
+
+    .marquee-content_logos,
+    .marquee-container_logos {
+        display: none;
+    }
+
 
     .box,
     .box_list {
@@ -480,8 +548,8 @@
     }
 
     .icon-entrance {
-        width: 60px;
-        height: 65px;
+        width: 32px;
+        height: 30px;
     }
 
     .text_about_us {
@@ -660,4 +728,129 @@
     .ul-sub li {
         font-size: 8px !important;
     }
+
+    .childrens_paragraph {
+        font-size: 36px !important;
+    }
+
+    .paragraph {
+        height: unset !important;
+    }
+
+    .we-serve-regions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .location {
+        text-align: center;
+    }
+
+}
+
+@media (1366px <=width <=768px) {
+    .general {
+        width: 112% !important;
+    }
+
+    .paragraph_about_us {
+        font-size: 23px !important;
+    }
+
+    .paragraph {
+        height: 59px;
+    }
+
+    .modal_box {
+        height: 90vh;
+    }
+
+    .content {
+        padding: 26px;
+    }
+
+    .about_of_mission,
+    .about_of_value {
+        text-align: -webkit-auto !important;
+        font-size: 12px !important;
+    }
+
+    .logo_m {
+        width: 139px;
+    }
+
+    .box {
+        margin-top: 19px;
+    }
+
+    ul {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-arou
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .model_box_different,
+    .model_box_different-blue,
+    .model_box_different_forest {
+        height: 60vh;
+    }
+
+    .contact {
+        margin-top: 62px;
+        font-size: 2rem;
+        font-weight: 500;
+
+    }
+
+    .text_address {
+        font-weight: 500;
+    }
+
+    .model_box_end {
+        height: 67vh;
+    }
+
+    .thanks {
+        height: 45vh;
+    }
+
+    .address {
+        width: 112%;
+    }
+
+    .childrens_paragraph {
+        font-size: 36px !important;
+    }
+
+    .signature {
+        width: 112%;
+    }
+
+    .footer_all {
+        width: 112%;
+    }
+
+    .city {
+        background-color: #FFF;
+    }
+
+    .we-serve-regions {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .location {
+        text-align: center !important;
+    }
+
 }
